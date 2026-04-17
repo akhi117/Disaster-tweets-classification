@@ -2,22 +2,11 @@
 
 An Artificial Intelligence project focused on **binary classification of disaster-related tweets**, with special emphasis on solving the **class imbalance problem** using multiple sampling, weighting, and threshold optimization techniques.
 
-## Overview
+## Overview During emergencies, social media sends out a lot of information, but only a small amount of it has useful disaster signals.
 
-Social media generates massive volumes of information during emergencies, but only a small fraction contains actionable disaster signals.
+This project builds and tests machine learning models that put tweets into two groups: 1) disaster-related and 0) not disaster. The main problem is that there is a big class imbalance (81% non-disaster / 19% disaster). This study looks at how different ways of dealing with the imbalance affect how well the models classify tweets.
 
-This project builds and compares machine learning models that classify tweets as:
-
-- **1 → Disaster-related**
-- **0 → Non-disaster**
-
-The main challenge addressed is:
-
-- Severe class imbalance (**81% non-disaster / 19% disaster**)
-
-This study evaluates how different imbalance handling strategies affect classification performance.
-
----
+--- 
 
 ## Features
 
@@ -35,7 +24,7 @@ This study evaluates how different imbalance handling strategies affect classifi
 - Threshold Moving
 - SMOTE + Threshold Moving
 
----
+--- 
 
 ## Dataset
 
@@ -51,7 +40,7 @@ Features used:
 - TF-IDF Vectorization (1-3 grams)
 - 10,000 max features
 
----
+--- 
 
 ## Preprocessing Pipeline
 
@@ -65,7 +54,7 @@ Features used:
 - Lemmatization
 - TF-IDF feature extraction
 
----
+--- 
 
 ## Evaluation Metrics
 
@@ -81,7 +70,7 @@ This project evaluates:
 - PR-AUC
 - Confusion Matrices
 
----
+--- 
 
 ## Best Results
 
@@ -97,7 +86,7 @@ This project evaluates:
 | ROC-AUC | 0.9128 |
 | PR-AUC | 0.7640 |
 
----
+--- 
 
 ## Key Findings
 
@@ -187,8 +176,3 @@ python main.py
 - Model ensembling
 - Real-time tweet streaming deployment
 
----
-
-## License
-
-Academic / Educational Use
